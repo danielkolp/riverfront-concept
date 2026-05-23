@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background: #f7f2e8;
+    color: #1f2a24;
+    font-family: "Alegreya Sans", Manrope, system-ui, sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+
+  ::selection {
+    background: rgba(216, 181, 109, 0.45);
+    color: #08251d;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply text-sm font-bold uppercase text-forest/85 sm:text-[0.95rem];
+  }
+
+  .heading-xl {
+    @apply font-heading text-5xl font-semibold leading-none text-cream sm:text-6xl lg:text-7xl;
+  }
+
+  .heading-lg {
+    @apply font-heading text-4xl font-semibold leading-tight text-forest sm:text-5xl lg:text-6xl;
+  }
+
+  .body-copy {
+    @apply text-lg leading-8 text-ink/85 sm:text-xl sm:leading-9;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold;
+  }
+
+  .text-shadow-lodge {
+    text-shadow:
+      0 2px 18px rgba(8, 37, 29, 0.72),
+      0 1px 2px rgba(8, 37, 29, 0.88);
+  }
+
+  .text-shadow-soft {
+    text-shadow: 0 1px 12px rgba(8, 37, 29, 0.55);
+  }
+}
