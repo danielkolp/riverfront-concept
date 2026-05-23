@@ -3,21 +3,22 @@ import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } fr
 import { FeatherIcon, HomeIcon, RouteIcon, WavesIcon } from "lucide-animated";
 import BookingCard from "./BookingCard.jsx";
 import { bookingUrl } from "../data/booking.js";
+import { imagePath } from "../data/imagePath.js";
 import riverDivider from "../assets/decor/river-divider.svg";
 
 const heroImages = [
   {
-    src: "/images/Riverfront-1.jpg",
+    src: imagePath("/images/Riverfront-1.jpg"),
     alt: "Riverfront Bed & Breakfast dining room with garden views",
     position: "object-center",
   },
   {
-    src: "/images/Riverfront-23.jpg",
+    src: imagePath("/images/Riverfront-23.jpg"),
     alt: "Riverfront Bed & Breakfast bedroom with fresh linens",
     position: "object-center",
   },
   {
-    src: "/images/breakfast.jpg",
+    src: imagePath("/images/breakfast.jpg"),
     alt: "Breakfast served at Riverfront Bed & Breakfast",
     position: "object-center",
   },
@@ -124,7 +125,7 @@ export default function Hero() {
             transition={{ duration: 13, repeat: Infinity, ease: "linear" }}
           />
           <motion.path
-            d="M-20 122 C 180 72, 290 158, 520 112 S 846 88, 1060 128 1458 96"
+            d="M-20 122 C 180 72, 290 158, 520 112 S 846 88, 1060 128 1240 156 1458 96"
             fill="none"
             stroke="currentColor"
             strokeWidth="1.5"

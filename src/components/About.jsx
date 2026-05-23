@@ -1,20 +1,21 @@
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from "lucide-animated";
+import { imagePath } from "../data/imagePath.js";
 import botanicalLineArt from "../assets/decor/botanical-line-art.svg";
 import riverDivider from "../assets/decor/river-divider.svg";
 
 const slides = [
   {
-    src: "/images/Riverfront-1.jpg",
+    src: imagePath("/images/Riverfront-1.jpg"),
     alt: "Riverfront Bed & Breakfast guest dining room with garden views",
   },
   {
-    src: "/images/breakfast.jpg",
+    src: imagePath("/images/breakfast.jpg"),
     alt: "Breakfast served at Riverfront Bed & Breakfast",
   },
   {
-    src: "/images/Riverfront-23.jpg",
+    src: imagePath("/images/Riverfront-23.jpg"),
     alt: "Riverfront Bed & Breakfast bedroom with fresh linens",
   },
 ];

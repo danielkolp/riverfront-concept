@@ -1,3 +1,5 @@
+import { imagePath } from "./imagePath.js";
+
 export const rooms = [
   {
     slug: "deep-cove",
@@ -5,11 +7,11 @@ export const rooms = [
     shortName: "Deep Cove",
     images: [
       {
-        src: "/images/rooms/DeepCove-1.jpg",
+        src: imagePath("/images/rooms/DeepCove-1.jpg"),
         alt: "Deep Cove Room bed with fresh white linens and folded towels",
       },
       {
-        src: "/images/rooms/DeepCove-2.jpg",
+        src: imagePath("/images/rooms/DeepCove-2.jpg"),
         alt: "Deep Cove Room window, dresser, wall TV, and bed details",
       },
     ],
@@ -24,11 +26,11 @@ export const rooms = [
     shortName: "Lynn Valley",
     images: [
       {
-        src: "/images/rooms/LynnValley-1.jpg",
+        src: imagePath("/images/rooms/LynnValley-1.jpg"),
         alt: "Lynn Valley Room bed with teal accent throw and sitting area",
       },
       {
-        src: "/images/rooms/LynnValley-2.jpg",
+        src: imagePath("/images/rooms/LynnValley-2.jpg"),
         alt: "Lynn Valley Room bed, sofa, and spacious floor area",
       },
     ],
@@ -43,7 +45,7 @@ export const rooms = [
     shortName: "Seymour",
     images: [
       {
-        src: "/images/rooms/Seymour-1.jpg",
+        src: imagePath("/images/rooms/Seymour-1.jpg"),
         alt: "Seymour Room bed, lounge chair, standing lamp, and wall TV",
       },
     ],
